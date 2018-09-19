@@ -12,7 +12,7 @@
  */
 declare(strict_types=1);
 
-namespace Modules\Sales;
+namespace Modules\Sales\Controller;
 
 use Modules\Navigation\Models\Navigation;
 use Modules\Navigation\Views\NavigationView;
@@ -31,7 +31,7 @@ use phpOMS\Views\View;
  * @link       http://website.orange-management.de
  * @since      1.0.0
  */
-final class Controller extends ModuleAbstract implements WebInterface
+class Controller extends ModuleAbstract implements WebInterface
 {
 
     /**
@@ -40,7 +40,7 @@ final class Controller extends ModuleAbstract implements WebInterface
      * @var string
      * @since 1.0.0
      */
-    public const MODULE_PATH = __DIR__;
+    public const MODULE_PATH = __DIR__ . '/../';
 
     /**
      * Module version.
