@@ -4,7 +4,7 @@
  *
  * PHP Version 8.0
  *
- * @package   Modules\Sales
+ * @package   Modules\Localization
  * @copyright Dennis Eichhorn
  * @license   OMS License 1.0
  * @version   1.0.0
@@ -37,6 +37,7 @@ return ['Sales' => [
     'Created'              => 'Created',
     'Creator'              => 'Creator',
     'CreditNote'           => 'Credit Note',
+    'DSO'                  => 'DSO',
     'Date'                 => 'Date',
     'DefaultInternational' => 'Default International',
     'DefaultNational'      => 'Default National',
@@ -46,7 +47,6 @@ return ['Sales' => [
     'Discount'             => 'Discount',
     'DiscountP'            => 'Discount in %',
     'Documentation'        => 'Documentation',
-    'DSO'                  => 'DSO',
     'Employee'             => 'Employee',
     'FAO'                  => 'FAO',
     'From'                 => 'From',
