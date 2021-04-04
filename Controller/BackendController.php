@@ -24,7 +24,7 @@ namespace Modules\Sales\Controller;
  */
 final class BackendController extends Controller
 {
-	/**
+    /**
      * {@inheritdoc}
      */
     public function viewDashboard(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
