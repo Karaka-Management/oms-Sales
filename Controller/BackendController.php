@@ -29,7 +29,7 @@ use phpOMS\Contract\RenderableInterface;
  */
 final class BackendController extends Controller
 {
-	/**
+    /**
      * {@inheritdoc}
      */
     public function viewDashboard(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
