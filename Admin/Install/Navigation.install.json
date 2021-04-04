@@ -26,7 +26,23 @@
                 "from": "Sales",
                 "permission": { "permission": 2, "type": null, "element": null },
                 "parent": 1001601001,
-                "children": []
+                "children": [
+                    {
+                        "id": 1001602002,
+                        "pid": "/sales/analysis",
+                        "type": 3,
+                        "subtype": 1,
+                        "name": "Dashboard",
+                        "uri": "{/prefix}sales/analysis?{?}",
+                        "target": "self",
+                        "icon": null,
+                        "order": 1,
+                        "from": "Sales",
+                        "permission": { "permission": 2, "type": null, "element": null },
+                        "parent": 1001602001,
+                        "children": []
+                    }
+                ]
             }
         ]
     }

@@ -24,4 +24,15 @@ namespace Modules\Sales\Controller;
  */
 final class BackendController extends Controller
 {
+	/**
+     * {@inheritdoc}
+     */
+    public function viewDashboard(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
+    {
+        $view = new View($this->app->l11nManager, $request, $response);
+        $view->setTemplate('/Modules/Sales/Theme/Backend/sales-analysis-dashboard');
+        $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1001602001, $request, $response));
+
+        return $view;
+    }
 }
