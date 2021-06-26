@@ -31,7 +31,15 @@ use phpOMS\Views\View;
 final class BackendController extends Controller
 {
     /**
-     * {@inheritdoc}
+     * Method which shows the sales dashboard
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param mixed            $data     Generic data
+     *
+     * @return RenderableInterface Response can be rendered
+     *
+     * @since 1.0.0
      */
     public function viewDashboard(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
     {

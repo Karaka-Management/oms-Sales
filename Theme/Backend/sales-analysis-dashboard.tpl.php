@@ -25,16 +25,16 @@ echo $this->getData('nav')->render();
     <div class="col-xs-12 col-lg-4">
         <section class="portlet">
             <div class="portlet-body">
-            	<h2><?= $this->getHtml('Current'); ?></h2>
-            	<div class="form-group">
+                <h2><?= $this->getHtml('Current'); ?></h2>
+                <div class="form-group">
                     <div class="input-control">
                         <label for="iOname"><?= $this->getHtml('Start'); ?></label>
-                    	<input type="date">
+                        <input type="date">
                     </div>
 
                     <div class="input-control">
                         <label for="iOname"><?= $this->getHtml('End'); ?></label>
-                    	<input type="date">
+                        <input type="date">
                     </div>
                 </div>
 
@@ -42,24 +42,24 @@ echo $this->getData('nav')->render();
                 <div class="form-group">
                     <div class="input-control">
                         <label for="iOname"><?= $this->getHtml('Start'); ?></label>
-                    	<input type="date">
+                        <input type="date">
                     </div>
 
                     <div class="input-control">
                         <label for="iOname"><?= $this->getHtml('End'); ?></label>
-                    	<input type="date">
+                        <input type="date">
                     </div>
                 </div>
             </div>
             <div class="portlet-foot">
-            	<input id="iSubmitGeneral" name="submitGeneral" type="submit" value="<?= $this->getHtml('Analyze'); ?>">
+                <input id="iSubmitGeneral" name="submitGeneral" type="submit" value="<?= $this->getHtml('Analyze'); ?>">
             </div>
         </section>
     </div>
 
     <div class="col-xs-12 col-lg-4">
         <section class="portlet highlight-2">
-        	<div class="portlet-head">Actual</div>
+            <div class="portlet-head">Actual</div>
             <div class="portlet-body">
                 <div class="form-group">
                     <div>Sales MTD:</div>
@@ -86,7 +86,7 @@ echo $this->getData('nav')->render();
 
     <div class="col-xs-12 col-lg-4">
         <section class="portlet highlight-3">
-        	<div class="portlet-head">Budget</div>
+            <div class="portlet-head">Budget</div>
             <div class="portlet-body">
                 <div class="form-group">
                     <div>Sales MTD:</div>
@@ -115,13 +115,13 @@ echo $this->getData('nav')->render();
 <div class="row">
     <div class="col-xs-12 col-lg-6">
         <section class="portlet">
-        	<div class="portlet-head">
-        		Sales / Profit - Monthly
-        		<?php include __DIR__ . '/../../../../Web/Backend/Themes/popup-export-data.tpl.php'; ?>
-        	</div>
+            <div class="portlet-head">
+                Sales / Profit - Monthly
+                <?php include __DIR__ . '/../../../../Web/Backend/Themes/popup-export-data.tpl.php'; ?>
+            </div>
             <?php $salesCustomer = $this->getData('monthlySalesCustomer'); ?>
             <div class="portlet-body">
-            	<canvas id="sales-region" data-chart='{
+                <canvas id="sales-region" data-chart='{
                                 "type": "bar",
                                 "data": {
                                     "labels": [
@@ -173,10 +173,10 @@ echo $this->getData('nav')->render();
                                     ]
                                 },
                                 "options": {
-								    "title": {
-									    "display": false,
-									    "text": "Sales / Profit"
-								    },
+                                    "title": {
+                                        "display": false,
+                                        "text": "Sales / Profit"
+                                    },
                                     "scales": {
                                         "yAxes": [
                                             {
@@ -201,41 +201,41 @@ echo $this->getData('nav')->render();
                                 }
                         }'></canvas>
                 <div class="more-container">
-                	<input id="more-customer-sales" type="checkbox">
-                	<label for="more-customer-sales">
-                		<span>Data</span>
-                		<i class="fa fa-chevron-right expand"></i>
-                	</label>
-                	<div>
+                    <input id="more-customer-sales" type="checkbox">
+                    <label for="more-customer-sales">
+                        <span>Data</span>
+                        <i class="fa fa-chevron-right expand"></i>
+                    </label>
+                    <div>
                     <table class="default">
-                    	<thead>
-                    		<tr>
-                    			<td>Month
-                    			<td>Sales
-                    			<td>Customer count
-                		<tbody>
-                    		<?php
-                    			$sum1 = 0;
-                    			$sum2 = 0;
-                    		foreach ($salesCustomer as $values) :
-                    			$sum1 += ((int) $values['net_sales']) / 1000;
-                    			$sum2 += ((int) $values['customers']);
-                    		?>
-                    			<tr>
-                    				<td><?= $values['month'] . '/' . \substr((string) $values['year'], -2); ?>
-                    				<td><?= (new Money(((int) $values['net_sales']) / 1000))->getCurrency(); ?>
-                    				<td><?= ((int) $values['customers']); ?>
-                    		<?php endforeach; ?>
-                    			<tr>
-                    				<td>Total
-                    				<td><?= (new Money($sum1))->getCurrency(); ?>
-                    				<td><?= (int) ($sum2 / 12); ?>
+                        <thead>
+                            <tr>
+                                <td>Month
+                                <td>Sales
+                                <td>Customer count
+                        <tbody>
+                            <?php
+                                $sum1 = 0;
+                                $sum2 = 0;
+                            foreach ($salesCustomer as $values) :
+                                $sum1 += ((int) $values['net_sales']) / 1000;
+                                $sum2 += ((int) $values['customers']);
+                            ?>
+                                <tr>
+                                    <td><?= $values['month'] . '/' . \substr((string) $values['year'], -2); ?>
+                                    <td><?= (new Money(((int) $values['net_sales']) / 1000))->getCurrency(); ?>
+                                    <td><?= ((int) $values['customers']); ?>
+                            <?php endforeach; ?>
+                                <tr>
+                                    <td>Total
+                                    <td><?= (new Money($sum1))->getCurrency(); ?>
+                                    <td><?= (int) ($sum2 / 12); ?>
                     </table>
-                	</div>
+                    </div>
                 </div>
-        	</div>
-		</section>
-	</div>
+            </div>
+        </section>
+    </div>
 
     <div class="col-xs-12 col-lg-6">
         <section class="portlet">
@@ -355,12 +355,12 @@ echo $this->getData('nav')->render();
 </div>
 
 <div class="row">
-	<div class="col-xs-12">
+    <div class="col-xs-12">
         <section class="portlet">
-        	<div class="portlet-head">
-        		Sales / Attribute
-        		<?php include __DIR__ . '/../../../../Web/Backend/Themes/popup-export-data.tpl.php'; ?>
-        	</div>
+            <div class="portlet-head">
+                Sales / Attribute
+                <?php include __DIR__ . '/../../../../Web/Backend/Themes/popup-export-data.tpl.php'; ?>
+            </div>
             <table class="default">
                 <thead>
                     <tr>
@@ -377,12 +377,12 @@ echo $this->getData('nav')->render();
 </div>
 
 <div class="row">
-	<div class="col-xs-12">
+    <div class="col-xs-12">
         <section class="portlet">
-        	<div class="portlet-head">
-        		Sales / Region
-        		<?php include __DIR__ . '/../../../../Web/Backend/Themes/popup-export-data.tpl.php'; ?>
-        	</div>
+            <div class="portlet-head">
+                Sales / Region
+                <?php include __DIR__ . '/../../../../Web/Backend/Themes/popup-export-data.tpl.php'; ?>
+            </div>
             <table class="default">
                 <thead>
                     <tr>
