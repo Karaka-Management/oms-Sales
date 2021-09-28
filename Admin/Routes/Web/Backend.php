@@ -23,7 +23,7 @@ return [
             'dest'       => '\Modules\Sales\Controller\BackendController:viewDashboard',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::CREATE,
                 'state'  => PermissionState::ANALYSIS,
             ],
