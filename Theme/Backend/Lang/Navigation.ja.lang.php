@@ -13,12 +13,12 @@
 declare(strict_types=1);
 
 return ['Navigation' => [
-    'Analysis' => 'Analysis',
-    'Articles' => 'Articles',
-    'Clients'  => 'Clients',
-    'Create'   => 'Create',
-    'Invoice'  => 'Invoice',
-    'Invoices' => 'Invoices',
-    'Profile'  => 'Profile',
-    'Sales'    => 'Sales',
+    'Analysis' => '分析',
+    'Articles' => 'articles',
+    'Clients'  => 'クライアント',
+    'Create'   => '作成',
+    'Invoice'  => '請求書',
+    'Invoices' => '請求書',
+    'Profile'  => 'プロフィール',
+    'Sales'    => '売り返り',
 ]];

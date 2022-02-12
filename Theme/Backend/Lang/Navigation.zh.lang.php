@@ -13,12 +13,12 @@
 declare(strict_types=1);
 
 return ['Navigation' => [
-    'Analysis' => 'Analysis',
-    'Articles' => 'Articles',
-    'Clients'  => 'Clients',
-    'Create'   => 'Create',
-    'Invoice'  => 'Invoice',
-    'Invoices' => 'Invoices',
-    'Profile'  => 'Profile',
-    'Sales'    => 'Sales',
+    'Analysis' => '分析',
+    'Articles' => '文章',
+    'Clients'  => '客户',
+    'Create'   => '创建',
+    'Invoice'  => '发票',
+    'Invoices' => '发票',
+    'Profile'  => '轮廓',
+    'Sales'    => '销售量',
 ]];

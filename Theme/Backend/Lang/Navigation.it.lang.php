@@ -13,12 +13,12 @@
 declare(strict_types=1);
 
 return ['Navigation' => [
-    'Analysis' => 'Analysis',
-    'Articles' => 'Articles',
-    'Clients'  => 'Clients',
-    'Create'   => 'Create',
-    'Invoice'  => 'Invoice',
-    'Invoices' => 'Invoices',
-    'Profile'  => 'Profile',
-    'Sales'    => 'Sales',
+    'Analysis' => 'Analisi',
+    'Articles' => 'Artificio',
+    'Clients'  => 'Clienti',
+    'Create'   => 'Creare',
+    'Invoice'  => 'Fattura',
+    'Invoices' => 'Fatture',
+    'Profile'  => 'Profilo',
+    'Sales'    => 'Saldi',
 ]];
