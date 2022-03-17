@@ -13,7 +13,7 @@
 declare(strict_types=1);
 
 use Modules\Sales\Controller\BackendController;
-use Modules\Sales\Models\PermissionState;
+use Modules\Sales\Models\PermissionCategory;
 use phpOMS\Account\PermissionType;
 use phpOMS\Router\RouteVerb;
 
@@ -25,7 +25,7 @@ return [
             'permission' => [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::CREATE,
-                'state'  => PermissionState::ANALYSIS,
+                'state'  => PermissionCategory::ANALYSIS,
             ],
         ],
     ],
