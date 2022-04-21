@@ -42,7 +42,7 @@ final class BackendController extends Controller
      *
      * @since 1.0.0
      */
-    public function viewDashboard(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
+    public function viewDashboard(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : RenderableInterface
     {
         $head = $response->get('Content')->getData('head');
         $head->addAsset(AssetType::CSS, 'Resources/chartjs/Chartjs/chart.css');
