@@ -201,7 +201,7 @@ echo $this->getData('nav')->render();
                                 }
                         }'></canvas>
                 <div class="more-container">
-                    <input id="more-customer-sales" type="checkbox">
+                    <input id="more-customer-sales" type="checkbox" name="more-container">
                     <label for="more-customer-sales">
                         <span>Data</span>
                         <i class="fa fa-chevron-right expand"></i>
@@ -325,7 +325,7 @@ echo $this->getData('nav')->render();
                                 }
                         }'></canvas>
                 <div class="more-container">
-                    <input id="more-customer-sales-annual" type="checkbox">
+                    <input id="more-customer-sales-annual" type="checkbox" name="more-container">
                     <label for="more-customer-sales-annual">
                         <span>Data</span>
                         <i class="fa fa-chevron-right expand"></i>
