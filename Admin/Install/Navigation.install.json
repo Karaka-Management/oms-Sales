@@ -12,38 +12,6 @@
         "from": "Sales",
         "permission": { "permission": 2, "category": null, "element": null },
         "parent": 0,
-        "children": [
-            {
-                "id": 1001602001,
-                "pid": "/",
-                "type": 2,
-                "subtype": 1,
-                "name": "Analysis",
-                "uri": "{/base}/sales/analysis?{?}",
-                "target": "self",
-                "icon": null,
-                "order": 15,
-                "from": "Sales",
-                "permission": { "permission": 2, "category": null, "element": null },
-                "parent": 1001601001,
-                "children": [
-                    {
-                        "id": 1001602002,
-                        "pid": "/sales/analysis",
-                        "type": 3,
-                        "subtype": 1,
-                        "name": "Dashboard",
-                        "uri": "{/base}/sales/analysis?{?}",
-                        "target": "self",
-                        "icon": null,
-                        "order": 1,
-                        "from": "Sales",
-                        "permission": { "permission": 2, "category": null, "element": null },
-                        "parent": 1001602001,
-                        "children": []
-                    }
-                ]
-            }
-        ]
+        "children": []
     }
 ]
