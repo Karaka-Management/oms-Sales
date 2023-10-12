@@ -20,5 +20,5 @@ return ['Navigation' => [
     'Invoice'  => 'Rechnung',
     'Invoices' => 'Rechnungen',
     'Profile'  => 'Profil',
-    'Sales'    => 'Der Umsatz',
+    'Sales'    => 'Umsatz',
 ]];
