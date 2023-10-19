@@ -7,7 +7,7 @@
         "name": "Sales",
         "uri": null,
         "target": "self",
-        "icon": "fa fa-usd",
+        "icon": "attach_money",
         "order": 40,
         "from": "Sales",
         "permission": { "permission": 2, "category": null, "element": null },
