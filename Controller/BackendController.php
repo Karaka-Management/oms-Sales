@@ -14,11 +14,6 @@ declare(strict_types=1);
 
 namespace Modules\Sales\Controller;
 
-use phpOMS\Contract\RenderableInterface;
-use phpOMS\Message\RequestAbstract;
-use phpOMS\Message\ResponseAbstract;
-use phpOMS\Views\View;
-
 /**
  * Sales class.
  *
@@ -30,5 +25,4 @@ use phpOMS\Views\View;
  */
 final class BackendController extends Controller
 {
-
 }
