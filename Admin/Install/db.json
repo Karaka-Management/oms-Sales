@@ -1,0 +1,56 @@
+{
+    "sales_rep": {
+        "name": "sales_rep",
+        "fields": {
+            "sales_rep_id": {
+                "name": "sales_rep_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "sales_rep_code": {
+                "name": "sales_rep_code",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "sales_rep_main": {
+                "name": "sales_rep_main",
+                "type": "INT",
+                "null": true,
+                "default": false,
+                "foreignTable": "account",
+                "foreignKey": "account_id"
+            }
+        }
+    },
+    "sales_rep_account": {
+        "name": "sales_rep_account",
+        "fields": {
+            "sales_rep_account_id": {
+                "name": "sales_rep_account_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "sales_rep_account_account": {
+                "name": "sales_rep_account_account",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "account",
+                "foreignKey": "account_id"
+            },
+            "sales_rep_account_start": {
+                "name": "sales_rep_account_start",
+                "type": "DATETIME",
+                "null": false
+            },
+            "sales_rep_account_end": {
+                "name": "sales_rep_account_end",
+                "type": "DATETIME",
+                "null": false
+            }
+        }
+    }
+}

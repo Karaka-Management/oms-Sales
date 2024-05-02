@@ -12,6 +12,53 @@
         "from": "Sales",
         "permission": { "permission": 2, "category": null, "element": null },
         "parent": 0,
-        "children": []
+        "children": [
+            {
+                "id": 1001602001,
+                "pid": "/",
+                "type": 2,
+                "subtype": 1,
+                "name": "SalesReps",
+                "uri": "{/base}/sales/rep/list",
+                "target": "self",
+                "icon": null,
+                "order": 1,
+                "from": "Sales",
+                "permission": { "permission": 2, "category": null, "element": null },
+                "parent": 1001601001,
+                "children": [
+                    {
+                        "id": 1001602002,
+                        "pid": "/sales/rep",
+                        "type": 3,
+                        "subtype": 1,
+                        "name": "List",
+                        "uri": "{/base}/sales/rep/list",
+                        "target": "self",
+                        "icon": null,
+                        "order": 1,
+                        "from": "Sales",
+                        "permission": { "permission": 2, "category": null, "element": null },
+                        "parent": 1001602001,
+                        "children": []
+                    },
+                    {
+                        "id": 1001602003,
+                        "pid": "/sales/rep",
+                        "type": 3,
+                        "subtype": 1,
+                        "name": "Create",
+                        "uri": "{/base}/sales/rep/create",
+                        "target": "self",
+                        "icon": null,
+                        "order": 1,
+                        "from": "Sales",
+                        "permission": { "permission": 2, "category": null, "element": null },
+                        "parent": 1001602001,
+                        "children": []
+                    }
+                ]
+            }
+        ]
     }
 ]
