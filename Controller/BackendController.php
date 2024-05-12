@@ -14,7 +14,6 @@ declare(strict_types=1);
 
 namespace Modules\Sales\Controller;
 
-use Modules\Sales\Models\SalesRep;
 use Modules\Sales\Models\SalesRepMapper;
 use phpOMS\Contract\RenderableInterface;
 use phpOMS\Message\RequestAbstract;
@@ -48,7 +47,7 @@ final class BackendController extends Controller
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Sales/Theme/Backend/rep-list');
-        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1001601001, $request, $response);
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1001602001, $request, $response);
 
         $view->data['rep'] = SalesRepMapper::getAll()
             ->with('main')
@@ -74,10 +73,11 @@ final class BackendController extends Controller
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Sales/Theme/Backend/rep-view');
-        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1001601001, $request, $response);
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1001602001, $request, $response);
 
         $view->data['rep'] = SalesRepMapper::get()
             ->with('main')
+            ->where('id', (int) $request->getData('id'))
             ->execute();
 
         return $view;
@@ -99,7 +99,7 @@ final class BackendController extends Controller
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Sales/Theme/Backend/rep-view');
-        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1001601001, $request, $response);
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1001602001, $request, $response);
 
         return $view;
     }

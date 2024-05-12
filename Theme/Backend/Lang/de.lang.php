@@ -103,6 +103,7 @@ return ['Sales' => [
     'Turnover'             => 'Umsatz',
     'Type'                 => 'Typ',
     'ZipCode'              => 'Postleitzahl',
+    'Code'              => 'Kodierung',
     'SalesRep'              => 'Verkäufer',
     'SalesReps'              => 'Verkäufer',
 ]];

@@ -71,19 +71,4 @@ final class SalesRepMapper extends DataMapperFactory
             'external' => 'sales_rep_main',
         ],
     ];
-
-    /**
-     * Has many relation.
-     *
-     * @var array<string, array{mapper:class-string, table:string, self?:?string, external?:?string, column?:string}>
-     * @since 1.0.0
-     */
-    public const HAS_MANY = [
-        'files' => [
-            'mapper'   => MediaMapper::class,              /* mapper of the related object */
-            'table'    => 'sales_rep_media',       /* table of the related object, null if no relation table is used (many->1) */
-            'external' => 'sales_rep_media_dst',
-            'self'     => 'sales_rep_media_src',
-        ],
-    ];
 }

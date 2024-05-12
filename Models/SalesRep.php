@@ -45,13 +45,4 @@ class SalesRep
     public ?Account $main = null;
 
     public array $accounts = [];
-
-    /**
-     * Constructor
-     *
-     * @since 1.0.0
-     */
-    public function __construct()
-    {
-    }
 }
