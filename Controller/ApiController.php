@@ -92,7 +92,7 @@ final class ApiController extends Controller
     {
         $rep       = new SalesRep();
         $rep->code = $request->getDataString('code') ?? '';
-        $rep->main = $request->hasData('main') ? new NullAccount((int) $request->getData('main')) : null;;
+        $rep->main = $request->hasData('main') ? new NullAccount((int) $request->getData('main')) : null;
 
         return $rep;
     }

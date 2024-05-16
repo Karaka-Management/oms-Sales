@@ -16,10 +16,10 @@ use Modules\Sales\Models\NullSalesRep;
 use phpOMS\Uri\UriFactory;
 
 /**
- * @var \phpOMS\Views\View               $this
+ * @var \phpOMS\Views\View             $this
  * @var \Modules\Sales\Models\SalesRep $rep
  */
-$rep = $this->data['rep'] ?? new NullSalesRep();
+$rep   = $this->data['rep'] ?? new NullSalesRep();
 $isNew = $rep->id === 0;
 
 echo $this->data['nav']->render(); ?>

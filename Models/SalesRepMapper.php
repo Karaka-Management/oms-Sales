@@ -15,7 +15,6 @@ declare(strict_types=1);
 namespace Modules\Sales\Models;
 
 use Modules\Admin\Models\AccountMapper;
-use Modules\Media\Models\MediaMapper;
 use phpOMS\DataStorage\Database\Mapper\DataMapperFactory;
 
 /**
@@ -38,9 +37,9 @@ final class SalesRepMapper extends DataMapperFactory
      * @since 1.0.0
      */
     public const COLUMNS = [
-        'sales_rep_id'         => ['name' => 'sales_rep_id',         'type' => 'int',      'internal' => 'id'],
-        'sales_rep_code'         => ['name' => 'sales_rep_code',         'type' => 'string',   'internal' => 'code'],
-        'sales_rep_main'    => ['name' => 'sales_rep_main',    'type' => 'int',      'internal' => 'main'],
+        'sales_rep_id'   => ['name' => 'sales_rep_id',         'type' => 'int',      'internal' => 'id'],
+        'sales_rep_code' => ['name' => 'sales_rep_code',         'type' => 'string',   'internal' => 'code'],
+        'sales_rep_main' => ['name' => 'sales_rep_main',    'type' => 'int',      'internal' => 'main'],
     ];
 
     /**

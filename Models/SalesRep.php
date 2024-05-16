@@ -15,12 +15,6 @@ declare(strict_types=1);
 namespace Modules\Sales\Models;
 
 use Modules\Admin\Models\Account;
-use Modules\Admin\Models\NullAccount;
-use Modules\Editor\Models\EditorDoc;
-use Modules\Payment\Models\Payment;
-use Modules\Profile\Models\Profile;
-use phpOMS\Stdlib\Base\Address;
-use phpOMS\Stdlib\Base\NullAddress;
 
 /**
  * Sales rep class.

@@ -103,7 +103,7 @@ return ['Sales' => [
     'Turnover'             => 'Turnover',
     'Type'                 => 'Type',
     'ZipCode'              => 'Zip Code',
-    'Code'              => 'Code',
-    'SalesRep'              => 'Sales Rep',
-    'SalesReps'              => 'Sales Reps',
+    'Code'                 => 'Code',
+    'SalesRep'             => 'Sales Rep',
+    'SalesReps'            => 'Sales Reps',
 ]];
