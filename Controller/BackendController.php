@@ -77,7 +77,7 @@ final class BackendController extends Controller
 
         $view->data['rep'] = SalesRepMapper::get()
             ->with('main')
-            ->where('id', (int) $request->getData('id'))
+            ->where('id', $request->getDataInt('id') ?? 0)
             ->execute();
 
         return $view;
